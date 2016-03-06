@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.clearTableView.dataSource = self;
+    self.view.backgroundColor = [UIColor blackColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerClass:[ClearTableViewCell self] forCellReuseIdentifier:@"clearCell"]; // 因为这句才会初始化
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,8 +68,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ClearTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"clearCell" forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [self data][indexPath.row]];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Aenir Next" size:18];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.backgroundColor = [self colorForIndex:indexPath.row];
+}
+
+- (UIColor *)colorForIndex:(NSInteger)index {
+    CGFloat itemCount = [[self data] count] - 1; // 果然是这个算法问题，导致颜色出不来，把itemCount的类型写成NSInteger
+    CGFloat color = (index / itemCount) * 0.6;
+    
+    return [UIColor colorWithRed:1.0 green:color blue:0.0 alpha:1.0];
 }
 
 
