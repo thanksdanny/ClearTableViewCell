@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		FD0901021C8C27DB001A6FF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0901011C8C27DB001A6FF2 /* main.m */; };
 		FD0901051C8C27DB001A6FF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0901041C8C27DB001A6FF2 /* AppDelegate.m */; };
-		FD0901081C8C27DB001A6FF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0901071C8C27DB001A6FF2 /* ViewController.m */; };
 		FD09010B1C8C27DB001A6FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0901091C8C27DB001A6FF2 /* Main.storyboard */; };
 		FD09010D1C8C27DB001A6FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD09010C1C8C27DB001A6FF2 /* Assets.xcassets */; };
 		FD0901101C8C27DB001A6FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD09010E1C8C27DB001A6FF2 /* LaunchScreen.storyboard */; };
+		FD0901191C8C2908001A6FF2 /* ClearTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0901181C8C2908001A6FF2 /* ClearTableViewController.m */; };
+		FD09011C1C8C292E001A6FF2 /* ClearTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD09011B1C8C292E001A6FF2 /* ClearTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		FD0901011C8C27DB001A6FF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD0901031C8C27DB001A6FF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD0901041C8C27DB001A6FF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD0901061C8C27DB001A6FF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD0901071C8C27DB001A6FF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD09010A1C8C27DB001A6FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD09010C1C8C27DB001A6FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD09010F1C8C27DB001A6FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0901111C8C27DB001A6FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0901171C8C2908001A6FF2 /* ClearTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearTableViewController.h; sourceTree = "<group>"; };
+		FD0901181C8C2908001A6FF2 /* ClearTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearTableViewController.m; sourceTree = "<group>"; };
+		FD09011A1C8C292E001A6FF2 /* ClearTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearTableViewCell.h; sourceTree = "<group>"; };
+		FD09011B1C8C292E001A6FF2 /* ClearTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,10 @@
 			children = (
 				FD0901031C8C27DB001A6FF2 /* AppDelegate.h */,
 				FD0901041C8C27DB001A6FF2 /* AppDelegate.m */,
-				FD0901061C8C27DB001A6FF2 /* ViewController.h */,
-				FD0901071C8C27DB001A6FF2 /* ViewController.m */,
+				FD0901171C8C2908001A6FF2 /* ClearTableViewController.h */,
+				FD0901181C8C2908001A6FF2 /* ClearTableViewController.m */,
+				FD09011A1C8C292E001A6FF2 /* ClearTableViewCell.h */,
+				FD09011B1C8C292E001A6FF2 /* ClearTableViewCell.m */,
 				FD0901091C8C27DB001A6FF2 /* Main.storyboard */,
 				FD09010C1C8C27DB001A6FF2 /* Assets.xcassets */,
 				FD09010E1C8C27DB001A6FF2 /* LaunchScreen.storyboard */,
@@ -149,9 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0901081C8C27DB001A6FF2 /* ViewController.m in Sources */,
 				FD0901051C8C27DB001A6FF2 /* AppDelegate.m in Sources */,
+				FD09011C1C8C292E001A6FF2 /* ClearTableViewCell.m in Sources */,
 				FD0901021C8C27DB001A6FF2 /* main.m in Sources */,
+				FD0901191C8C2908001A6FF2 /* ClearTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
